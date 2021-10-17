@@ -1,8 +1,24 @@
-function submit_name(player_name, hello_player_name){
-    player_name = document.getElementById("player_name").value;
-    localStorage.setItem("player_name", player_name);
-    hello_player_name = "Welcome to the Escape Room, " + player_name + ". Please click start to begin";
-    document.getElementById("hello_name").innerHTML = hello_player_name;
+function submit_name(player_name, hello_player_name){  
+    if(document. getElementById("question").value.length == 0){
+      player_input_box.placeholder = "⚠ NAME REQUIRED!! ⚠";
+    }
+    else{
+      player_input_box = document.getElementById("player_name");
+      player_name = player_input_box.value;
+      localStorage.setItem("player_name", player_name);
+      hello_player_name = "Welcome to the Escape Room, " + player_name + ". Please click start to begin";
+      document.getElementById("hello_name").innerHTML = hello_player_name;
+    }
+    
+  }
+
+  function start_game(){
+    if(document. getElementById("question").value.length == 0){
+      player_input_box.placeholder = "⚠ NAME REQUIRED!! ⚠";
+    }
+    else{
+      window.location.replace("game.html");
+    }
   }
 
   function submit_code(){
