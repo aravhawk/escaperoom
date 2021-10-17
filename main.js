@@ -1,5 +1,5 @@
+player_input_box = document.getElementById("player_name");
 function submit_name(player_name, hello_player_name){  
-    player_input_box = document.getElementById("player_name");
     if(player_input_box.value.length == 0){
       player_input_box.placeholder = "⚠ NAME REQUIRED!! ⚠";
     }
