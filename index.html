@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+      <title>Welcome | Escape Room</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <div>
+  <p> Welcome to Escape Room!</p>
+  </div>
+  <p> Here are the instructions:</p>
+  <p> 1. Enter your name or nickname in the box provided in the game.</p>
+  <p> 2. Click on the clue links to get clues.</p>
+  <p> 3. If you find  all of the clues and enter the the correct numbers in the correct order you will escape the room!</p>
+  <p> 4. The answer to some riddles might be in words. Since the final answer is in numbers, you will need to convert it. To convert it to numbers, change each letter to the place it is in the alphabet. For example, if the answer to a question is "Sit," it should be converted to "19920."</p>
+  <p> 5. Once you gather all the different numbers, you must combine them into one big code. For example, lets say the numbers you gather are 19920, 8976, and 20918. The combined answer of these numbers will be 19920-8976-20918. You will need to enter your final code into the "FINAL ESCAPE ROOM CODE" input box.</p>
+  <p>Warning! Once you type the code into the "FINAL ESCAPE ROOM CODE" input box, and you open a clue, your code doesn't get saved, so you may want to write it down somewhere.</p>
+  </div>
+  <span class="sp">Name: <input type="text" id="player_name" placeholder=""> <button onclick="submit_name()">Submit</button></span>
+  <br><br><br>
+  <h3 id="hello_name"></h3>
+  <br><br><br><br>
+  <button onclick="start_game()">Start <span class="glyphicon glyphicon-chevron-right"></span></button>
+  <script src="main.js"></script>
+  </body>
+  </html>
